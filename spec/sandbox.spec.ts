@@ -1,6 +1,8 @@
-import { expect } from "chai";
+import { should } from "chai";
 import { before } from "mocha";
 import { browser, by, element } from "protractor";
+
+should();
 
 const url: string = "https://e2e-boilerplate.github.io/sandbox/";
 
@@ -11,9 +13,9 @@ describe("Sandbox", () => {
 
   it("should be on Sandbox", async () => {
     const title = await browser.getTitle();
-    const header = element(by.css("h1"));
+    title.should.eql("Sandbox");
 
-    expect(title).to.equal("Sandbox");
-    expect(await header.getText()).to.equal("Sandbox");
+    const header = await element(by.css("h1")).getText();
+    header.should.eql("Sandbox");
   });
 }).timeout(5000);
