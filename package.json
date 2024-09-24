@@ -4,7 +4,7 @@
     "url": "https://github.com/e2e-boilerplate/protractor-typescript-ts-node-mocha-chai-should/issues"
   },
   "dependencies": {
-    "chai": "4.3.4",
+    "chai": "4.5.0",
     "mocha": "8.4.0",
     "protractor": "7.0.0",
     "ts-node": "9.1.1",
@@ -12,7 +12,7 @@
   },
   "description": "Protractor end-to-end test automation boilerplate. Using TypeScript, ts-node, Mocha, Chai and Should.",
   "devDependencies": {
-    "@types/chai": "4.2.21",
+    "@types/chai": "4.3.20",
     "@types/jasminewd2": "2.0.10",
     "@types/mocha": "8.2.3",
     "@types/node": "13.13.52",
